@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Default styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  margin: 15px 10px;
+  padding: 10px 10px;
+  width: 30vw;
+}
+
+label {
+  margin-right: 5vw;
+}
+.dropdown {
+  position: absolute;
+  background-color:  rgba(255,255,255,0.75);
+  z-index: 1;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  width: auto;
+  z-index: 1;
+}
+
+.dropdown-content input {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.bg-black {
+  background-color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Containers */
+/* Sizing */
+.test {
+  border-style: solid;
+  border-color: red;
+  padding:10v;
+
+}
+
+.wrapper {
+  display: grid;
+}
+.container {
+  padding: 50px;
+}
+.container-row {
+  display: grid;
+  padding: 50px;
+  grid-template-rows: minmax(30vw, auto)
+}
+
+/* Triadic color scheme design */
+/* Borders */
+.border {
+ border-style: solid;
+ border-color: white;
+ border-width: medium;
+}
+
+.border-purple {
+  border-style: solid;
+  border-color: #C951B0;
+  border-width: medium;
+}
+.border-green {
+  border-style: solid;
+  border-color: #B0C951;
+  border-width: medium;
+}
+.border-blue {
+  border-style: solid;
+  border-color: #51B0C9;
+  border-width: medium;
+}
+
+.border-round {
+  border-radius: 20px;
+}
+
+/* Background colors */
+.bg-purple {
+  background-color:#C951B0
+}
+.bg-green {
+  background-color: #B0C951
+}
+.bg-blue {
+  background-color:#51B0C9
+}
+
+/* Grids */
+/* Columns */
+.column-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+.column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+.column-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
+.column-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+.column-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr)
+}
+.column-custom {
+  display: grid;
+  grid-template-columns: 1fr 9fr 3fr 1fr;
+}
+.column-input {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr;
+}
+
+
+/* rows */
+.row-1 {
+  grid-template-rows: 1fr;
+}
+.row-2 {
+  grid-template-rows: repeat(2, 1fr)
+}
+.row-3 {
+  grid-template-rows: repeat(3, 1fr)
+}
+.row-4 {
+  grid-template-rows: repeat(4, 1fr)
+}
+.row-5 {
+  grid-template-rows: repeat(5, 1fr)
+}
+.row-custom {
+  grid-template-rows: 1fr;
+}
+
+/* alignment */
+.justify-start {
+  justify-content: start;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.align-start {
+  align-items: start;
+}
+.align-end {
+  align-items: end;
+}
+.align-center {
+  align-items: center;
+}
+
+.dead-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-start {
+  text-align: left;
+}
+.text-end {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* Components */
+/* Buttons */
+.btn {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid rgba(255,255,255,0);
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align:center;
+  transition: all 0.2s;
+  background-color:#51B0C9;
+  min-width: 6em;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  border-color: rgba(255,255,255,1);
+}
+@media all and (max-width:30em){
+  .btn{
+  display:block;
+  margin:0.2em auto;
+  }
+}
+
+/* Debug styles */
+.border-black {
+  border-style: solid;
+  border-color: black;
+}
+
+.border-blue {
+  border-style: solid;
+  border-color: blue;
+}
+
+.border-red {
+  border-style: solid;
+  border-color: red
+}
+
+.border-yellow {
+  border-style: solid;
+  border-color: yellow;
+}
+
+
+
+
+
